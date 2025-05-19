@@ -19,9 +19,9 @@
 
 	<!-- Artifact identification and properties -->
 
-	<groupId>Design-and-Testing</groupId>
-	<artifactId>Sample-Project</artifactId>
-	<version>1.24.1</version>
+	<groupId>Vultures</groupId>
+	<artifactId>Acmenews</artifactId>
+	<version>2025</version>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -30,9 +30,9 @@
 
 	<!-- Indexing information -->
 
-	<name>Sample Project</name>
-	<url>http://www.sample-project.com</url>
-	<description>This is D&amp;T's sample project.</description>
+	<name>ACME Noticias</name>
+	<url>http://www.acmenews.com</url>
+	<description>Desde el inicio de la vida bajo el agua, pasando por las grandes bestias de la edad de piedra, hasta los primeros pasos erguidos del hombre, hemos llegado lejos.Ahora comienza nuestra mayor misión. Desde esta temprana cuna de la información, hasta la era del conocimiento absoluto. Con vosotros:ACME News.</description>
 	
 	<!-- Build commands -->
 
