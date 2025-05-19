@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>ACMENews</name>
+=======
+	<name>mgcss-acme-project</name>
+>>>>>>> branch 'main' of https://github.com/SnowSzn/mgcss-acme-project
 	<comment></comment>
 	<projects>
 	</projects>

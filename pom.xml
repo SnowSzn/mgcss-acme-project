@@ -19,7 +19,7 @@
 
 	<!-- Artifact identification and properties -->
 
-	<groupId>Vultures</groupId>
+	<groupId>Vulturesinc</groupId>
 	<artifactId>Acmenews</artifactId>
 	<version>2025</version>
 	<packaging>war</packaging>
