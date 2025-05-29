@@ -1,0 +1,13 @@
+{
+  "short_name": "Acme Noticias",
+  "name": "Acme Noticias | Portal de noticias online",
+  "icons": [
+    {
+      "src": "LogoCuadrado.svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

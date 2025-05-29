@@ -1,0 +1,233 @@
+/* Variables y reset básico */
+:root {
+  --primary-color: #0066cc; /* Azul brillante para fondos generales y elementos */
+  --secondary-color: #003399; /* Azul oscuro para acentos y texto contrastado */
+  --accent-color: #ffcc00; /* Amarillo para botones y acentos */
+  --background-color: #f8f9fa; /* Fondo global claro */
+  --text-color: #333333;
+  --white-color: #ffffff;
+  --border-radius: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif, "arial";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Open Sans";
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: var(--white-color);
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste en los botones del navbar: ya no son azules,
+   sino que usan el color de acento (amarillo) para que contrasten con el fondo azul */
+.navbar button {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 8px 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #e6b800; /* Un poco más oscuro para efecto hover */
+}
+
+/* Buscador integrado en el navbar */
+.navbar form {
+  display: flex;
+  align-items: center;
+}
+
+.navbar form input[type="text"] {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.navbar form button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar form button:hover {
+  background-color: #e6b800;
+}
+
+/* Contenedor global para centrar el contenido */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Página de artículos centrada */
+.article-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-page .article-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* Formularios */
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: fit-content;
+}
+
+.create-article-contents textarea {
+  height: fit-content;
+  min-height: min-content;
+  resize: vertical;
+}
+
+.edit-article-contents textarea {
+  height: fit-content;
+  min-height: min-content;
+  resize: vertical;
+}
+
+.article-comments form textarea {
+  height: fit-content;
+  min-height: min-content;
+  resize: vertical;
+}
+
+/* Botones global (para formularios y otros) */
+button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 8px 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Enlaces globales */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings y párrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}

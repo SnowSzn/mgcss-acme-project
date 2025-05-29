@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-separator {
+  flex-grow: 1;
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

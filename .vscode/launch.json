@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Backend & Frontend",
+      "configurations": ["Debug Backend", "Start Frontend", "Debug Frontend"]
+    }
+  ],
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Backend",
+      "cwd": "${workspaceFolder}/acme-noticias-backend",
+      "program": "${workspaceFolder}/acme-noticias-backend/server.js",
+      "runtimeExecutable": "nodemon",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "node-terminal",
+      "request": "launch",
+      "name": "Start Frontend",
+      "cwd": "${workspaceFolder}/acme-noticias-frontend",
+      "command": "npm start"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Frontend",
+      "cwd": "${workspaceFolder}/acme-noticias-frontend",
+      "webRoot": "${workspaceFolder}/acme-noticias-frontend/src",
+      "url": "http://localhost:3001"
+    }
+  ]
+}

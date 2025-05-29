@@ -1,0 +1,17 @@
+.header {
+  display: block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--primary-color) 25%,
+    var(--primary-color) 75%,
+    transparent 100%
+  );
+}
+
+.header-date {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+{
+	"name": "acme-noticias",
+	"version": "1.0.0",
+	"description": "Sistema de información web para gestionar y consultar artículos periodísticos para Noticias Acme",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "6.16",
+		"mongoose": "^7.0.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.22"
+	}
+}
